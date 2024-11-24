@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Stray Music</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Video Background -->
+        <video autoplay muted loop id="bg-video">
+            <source src="Video Assignment 22YAD106762.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">Stray Music</a>
+                </div>
+                <ul>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="producers.html">Producers</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="main">
+                <div class="overlay">
+                    <h1>Contact Us</h1>
+                    <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+                    <form action="submit_contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Stray Music. All rights reserved.</p>
+                <div class="social-media">
+                    <a href="https://facebook.com/straymusic" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/straymusic" target="_blank">Twitter</a>
+                    <a href="https://instagram.com/straymusic" target="_blank">Instagram</a>
+                    <a href="https://youtube.com/straymusic" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
